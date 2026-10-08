@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuizPlay - Explore</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo" href="index.html">Quiz<span>Play</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="explore.html" class="active">Explore</a>
+      <a href="create-quiz.html">Create Quiz</a>
+    </div>
+  </nav>
+
+  <main class="container page">
+    <div class="page-heading">
+      <p class="eyebrow">DISCOVER</p>
+      <h1>Explore Quizzes</h1>
+      <p>Find a quiz that matches your interests.</p>
+    </div>
+
+    <div class="filters">
+      <input id="search" type="search" placeholder="Search quiz...">
+      <select id="category">
+        <option value="all">All categories</option>
+        <option value="IT">IT</option>
+        <option value="Cybersecurity">Cybersecurity</option>
+        <option value="English">English</option>
+        <option value="General">General</option>
+      </select>
+      <select id="difficulty">
+        <option value="all">All difficulty</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+      </select>
+    </div>
+
+    <div id="quiz-list" class="quiz-grid"></div>
+  </main>
+
+  <footer>© 2026 QuizPlay.</footer>
+  <script src="js/data.js"></script>
+  <script src="js/explore.js"></script>
+</body>
+</html>
